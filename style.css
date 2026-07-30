@@ -293,7 +293,26 @@ CloudWatch
 </footer>
 
 <script src="script.js"></script>
+body{
+opacity:0;
+transition:1s;
+}
 
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+nav a.active{
+color:#00e5ff;
+font-weight:bold;
+}
 </body>
 
 </html>
