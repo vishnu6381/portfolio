@@ -1,6 +1,6 @@
-// ==========================
-// Smooth Active Navigation
-// ==========================
+// ===============================
+// Smooth Scroll Active Menu
+// ===============================
 
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
@@ -11,10 +11,9 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 120;
-        const sectionHeight = section.clientHeight;
+        const sectionTop = section.offsetTop - 150;
 
-        if (pageYOffset >= sectionTop) {
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
 
@@ -32,12 +31,11 @@ window.addEventListener("scroll", () => {
 
 });
 
+// ===============================
+// Scroll Reveal Animation
+// ===============================
 
-// ==========================
-// Fade Animation
-// ==========================
-
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
@@ -52,123 +50,132 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll(".card,.project,.about,.contact").forEach(el => {
 
     el.classList.add("hidden");
+
     observer.observe(el);
 
 });
 
+// ===============================
+// Typing Animation
+// ===============================
 
-// ==========================
-// Floating Icons Animation
-// ==========================
+const words = [
 
-const icons = document.querySelectorAll(".icon");
-
-icons.forEach((icon, index) => {
-
-    icon.style.animationDelay = `${index * .5}s`;
-
-});
-
-
-// ==========================
-// Hero Typing Effect
-// ==========================
-
-const roles = [
+"DevOps Engineer",
 
 "Linux Administrator",
-"DevOps Engineer",
+
 "AWS Cloud Engineer",
+
 "Kubernetes Engineer",
+
 "Terraform Learner"
 
 ];
 
-let roleIndex = 0;
+let wordIndex = 0;
 let charIndex = 0;
 
-const heading = document.querySelector(".hero-left h2");
+const typing = document.querySelector(".hero-left h2");
 
-function typeEffect() {
+function type() {
 
-    if (!heading) return;
+    if(charIndex < words[wordIndex].length){
 
-    if (charIndex < roles[roleIndex].length) {
-
-        heading.textContent += roles[roleIndex].charAt(charIndex);
+        typing.textContent += words[wordIndex].charAt(charIndex);
 
         charIndex++;
 
-        setTimeout(typeEffect, 90);
+        setTimeout(type,100);
 
-    } else {
+    }
 
-        setTimeout(eraseEffect, 2000);
+    else{
+
+        setTimeout(erase,1800);
 
     }
 
 }
 
-function eraseEffect() {
+function erase(){
 
-    if (charIndex > 0) {
+    if(charIndex>0){
 
-        heading.textContent = roles[roleIndex].substring(0, charIndex - 1);
+        typing.textContent = words[wordIndex].substring(0,charIndex-1);
 
         charIndex--;
 
-        setTimeout(eraseEffect, 50);
+        setTimeout(erase,50);
 
-    } else {
+    }
 
-        roleIndex++;
+    else{
 
-        if (roleIndex >= roles.length)
-            roleIndex = 0;
+        wordIndex++;
 
-        setTimeout(typeEffect, 300);
+        if(wordIndex>=words.length){
+
+            wordIndex=0;
+
+        }
+
+        setTimeout(type,300);
 
     }
 
 }
 
-heading.textContent = "";
+typing.textContent="";
 
-typeEffect();
+type();
 
+// ===============================
+// Floating Icons Animation
+// ===============================
 
-// ==========================
-// Button Ripple Effect
-// ==========================
+const icons = document.querySelectorAll(".icon");
 
-document.querySelectorAll(".btn1,.btn2").forEach(button => {
+icons.forEach((icon,index)=>{
 
-button.addEventListener("mousemove",(e)=>{
-
-const x=e.pageX-button.offsetLeft;
-const y=e.pageY-button.offsetTop;
-
-button.style.setProperty("--x",x+"px");
-button.style.setProperty("--y",y+"px");
+    icon.style.animationDelay=index*0.4+"s";
 
 });
 
+// ===============================
+// Navbar Background
+// ===============================
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#020617";
+
+}
+
+else{
+
+header.style.background="rgba(0,0,0,.35)";
+
+}
+
 });
 
-
-// ==========================
-// Console Welcome
-// ==========================
-
-console.log("🔥 Welcome to Vishnu DevOps Portfolio");
-
-
-// ==========================
+// ===============================
 // Loading Animation
-// ==========================
+// ===============================
 
 window.onload=()=>{
 
 document.body.style.opacity="1";
 
 };
+
+// ===============================
+// Console Message
+// ===============================
+
+console.log("🔥 Welcome to Vishnu S Portfolio");
