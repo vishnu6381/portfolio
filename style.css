@@ -1,318 +1,395 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vishnu S | DevOps Engineer</title>
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
 
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-
-<i class="fa-solid fa-code"></i>
-
-<h2>Vishnu S</h2>
-
-</div>
-
-<nav>
-
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-
-</nav>
-
-<a href="#" class="resume-btn">Resume</a>
-
-</header>
-
-
-<section class="hero" id="home">
-
-<div class="hero-left">
-
-<h3>Hello 👋 I'm</h3>
-
-<h1>Vishnu S</h1>
-
-<h2>Linux | AWS | DevOps Engineer</h2>
-
-<p>
-
-Passionate DevOps Engineer with hands-on experience in Linux,
-Docker, Kubernetes, GitLab CI/CD, Terraform,
-Ansible, Prometheus, Grafana and AWS.
-
-</p>
-
-<div class="buttons">
-
-<a href="#projects" class="btn1">View Projects</a>
-
-<a href="#contact" class="btn2">Hire Me</a>
-
-</div>
-
-<div class="social">
-
-<a href="https://github.com/vishnu6381"><i class="fab fa-github"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fa-solid fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-
-
-<div class="hero-right">
-
-<div class="circle">
-
-<img src="images/profile.png">
-
-</div>
-
-<div class="icon docker">
-
-<i class="fa-brands fa-docker"></i>
-
-</div>
-
-<div class="icon aws">
-
-<i class="fa-brands fa-aws"></i>
-
-</div>
-
-<div class="icon linux">
-
-<i class="fa-brands fa-linux"></i>
-
-</div>
-
-<div class="icon git">
-
-<i class="fa-brands fa-git-alt"></i>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="about" id="about">
-
-<h2>About Me</h2>
-
-<p>
-
-I am an aspiring DevOps Engineer passionate about automation,
-cloud computing and scalable infrastructure.
-
-I have hands-on experience with Linux Administration,
-Docker, Kubernetes, GitLab CI/CD,
-Terraform, AWS, Prometheus and Grafana.
-
-</p>
-
-</section>
-
-
-
-<section class="skills" id="skills">
-
-<h2>Tech Stack</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-brands fa-linux"></i>
-
-<h3>Linux</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-brands fa-docker"></i>
-
-<h3>Docker</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-brands fa-aws"></i>
-
-<h3>AWS</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-brands fa-git-alt"></i>
-
-<h3>Git</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-dharmachakra"></i>
-
-<h3>Kubernetes</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-server"></i>
-
-<h3>Terraform</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chart-line"></i>
-
-<h3>Prometheus</h3>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-chart-pie"></i>
-
-<h3>Grafana</h3>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="projects" id="projects">
-
-<h2>Featured Projects</h2>
-
-<div class="project-grid">
-
-<div class="project">
-
-<h3>GitLab CI/CD</h3>
-
-<p>
-
-GitLab → Docker → DockerHub →
-ArgoCD → Kubernetes Deployment
-
-</p>
-
-</div>
-
-
-<div class="project">
-
-<h3>Kubernetes Monitoring</h3>
-
-<p>
-
-Prometheus + Grafana +
-Alertmanager
-
-</p>
-
-</div>
-
-
-<div class="project">
-
-<h3>AWS Infrastructure</h3>
-
-<p>
-
-EC2, ALB,
-Auto Scaling,
-CloudWatch
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="contact" id="contact">
-
-<h2>Contact Me</h2>
-
-<p>Email : vishnupcbmb@gmail.com</p>
-
-<p>GitHub : github.com/vishnu6381</p>
-
-<p>LinkedIn : linkedin.com/in/vishnu-s-8ba584426</p>
-
-</section>
-
-
-<footer>
-
-<p>
-
-© 2026 Vishnu S | DevOps Portfolio
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
 body{
-opacity:0;
-transition:1s;
+    background:linear-gradient(135deg,#0f172a,#020617,#111827);
+    color:#fff;
+    overflow-x:hidden;
 }
 
-.hidden{
-opacity:0;
-transform:translateY(50px);
-transition:1s;
+/* ===========================
+ Header
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(12px);
+    z-index:1000;
 }
 
-.show{
-opacity:1;
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#00d4ff;
+    font-size:30px;
+}
+
+.logo h2{
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00d4ff;
+}
+
+.resume-btn{
+    text-decoration:none;
+    background:#00d4ff;
+    color:black;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+ Hero
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.hero-left{
+    width:55%;
+}
+
+.hero-left h3{
+    color:#00d4ff;
+}
+
+.hero-left h1{
+    font-size:70px;
+    margin:15px 0;
+}
+
+.hero-left h2{
+    color:#d1d5db;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    line-height:1.8;
+    color:#d4d4d4;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn1,
+.btn2{
+    display:inline-block;
+    text-decoration:none;
+    padding:13px 28px;
+    border-radius:30px;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn1{
+    background:#00d4ff;
+    color:black;
+}
+
+.btn2{
+    border:2px solid #00d4ff;
+    color:white;
+}
+
+.btn1:hover,
+.btn2:hover{
+    transform:translateY(-5px);
+}
+
+/* ===========================
+ Social
+=========================== */
+
+.social{
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    margin-right:20px;
+    font-size:28px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#00d4ff;
+}
+
+/* ===========================
+ Profile
+=========================== */
+
+.hero-right{
+    position:relative;
+}
+
+.circle{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #00d4ff;
+    box-shadow:0 0 40px #00d4ff;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===========================
+ Floating Icons
+=========================== */
+
+.icon{
+    position:absolute;
+    width:70px;
+    height:70px;
+    background:#111827;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#00d4ff;
+    font-size:35px;
+    box-shadow:0 0 20px #00d4ff;
+    animation:float 3s infinite ease-in-out;
+}
+
+.docker{
+    top:-15px;
+    right:-15px;
+}
+
+.aws{
+    bottom:-10px;
+    left:-20px;
+}
+
+.git{
+    left:-50px;
+    top:120px;
+}
+
+.linux{
+    right:20px;
+    bottom:-20px;
+}
+
+@keyframes float{
+
+0%{
 transform:translateY(0);
 }
 
-nav a.active{
-color:#00e5ff;
-font-weight:bold;
+50%{
+transform:translateY(-15px);
 }
-</body>
 
-</html>
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ===========================
+ Sections
+=========================== */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#00d4ff;
+    margin-bottom:40px;
+    font-size:42px;
+}
+
+/* About */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+}
+
+/* ===========================
+ Skills
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111827;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #00d4ff;
+}
+
+.card i{
+    color:#00d4ff;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+/* ===========================
+ Projects
+=========================== */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.project:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #00d4ff;
+}
+
+.project h3{
+    color:#00d4ff;
+    margin-bottom:15px;
+}
+
+/* ===========================
+ Contact
+=========================== */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px;
+}
+
+/* ===========================
+ Footer
+=========================== */
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+ Animation
+=========================== */
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+    transition:1s;
+}
+
+nav a.active{
+    color:#00d4ff;
+}
+
+/* ===========================
+ Mobile
+=========================== */
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-left{
+width:100%;
+margin-top:40px;
+}
+
+.hero-left h1{
+font-size:45px;
+}
+
+.circle{
+width:280px;
+height:280px;
+}
+
+}
