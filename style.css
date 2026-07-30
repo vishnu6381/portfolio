@@ -1,97 +1,299 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu S | DevOps Engineer</title>
 
-body{
-background:#111827;
-color:white;
-}
+<link rel="stylesheet" href="style.css">
 
-header{
-display:flex;
-justify-content:space-between;
-padding:20px 10%;
-background:#1f2937;
-position:sticky;
-top:0;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-nav a{
-color:white;
-margin-left:25px;
-text-decoration:none;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-.hero{
-display:flex;
-justify-content:space-around;
-align-items:center;
-height:90vh;
-padding:0 10%;
-}
+</head>
 
-.hero img{
-width:280px;
-border-radius:50%;
-border:5px solid cyan;
-}
+<body>
 
-.hero h1{
-font-size:55px;
-}
+<header>
 
-.hero span{
-color:cyan;
-}
+<div class="logo">
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:cyan;
-margin-top:20px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-border-radius:5px;
-}
+<i class="fa-solid fa-code"></i>
 
-section{
-padding:80px 10%;
-}
+<h2>Vishnu S</h2>
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-margin-top:30px;
-}
+</div>
 
-.card{
-background:#1f2937;
-padding:30px;
-text-align:center;
-border-radius:8px;
-transition:.3s;
-}
+<nav>
 
-.card:hover{
-transform:translateY(-10px);
-background:cyan;
-color:black;
-}
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 
-.project{
-background:#1f2937;
-padding:30px;
-margin-top:20px;
-border-left:5px solid cyan;
-}
+</nav>
 
-footer{
-text-align:center;
-padding:30px;
-background:#1f2937;
-}
+<a href="#" class="resume-btn">Resume</a>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-left">
+
+<h3>Hello 👋 I'm</h3>
+
+<h1>Vishnu S</h1>
+
+<h2>Linux | AWS | DevOps Engineer</h2>
+
+<p>
+
+Passionate DevOps Engineer with hands-on experience in Linux,
+Docker, Kubernetes, GitLab CI/CD, Terraform,
+Ansible, Prometheus, Grafana and AWS.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="btn1">View Projects</a>
+
+<a href="#contact" class="btn2">Hire Me</a>
+
+</div>
+
+<div class="social">
+
+<a href="https://github.com/vishnu6381"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fa-solid fa-envelope"></i></a>
+
+</div>
+
+</div>
+
+
+
+<div class="hero-right">
+
+<div class="circle">
+
+<img src="images/profile.png">
+
+</div>
+
+<div class="icon docker">
+
+<i class="fa-brands fa-docker"></i>
+
+</div>
+
+<div class="icon aws">
+
+<i class="fa-brands fa-aws"></i>
+
+</div>
+
+<div class="icon linux">
+
+<i class="fa-brands fa-linux"></i>
+
+</div>
+
+<div class="icon git">
+
+<i class="fa-brands fa-git-alt"></i>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am an aspiring DevOps Engineer passionate about automation,
+cloud computing and scalable infrastructure.
+
+I have hands-on experience with Linux Administration,
+Docker, Kubernetes, GitLab CI/CD,
+Terraform, AWS, Prometheus and Grafana.
+
+</p>
+
+</section>
+
+
+
+<section class="skills" id="skills">
+
+<h2>Tech Stack</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-brands fa-linux"></i>
+
+<h3>Linux</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-docker"></i>
+
+<h3>Docker</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-aws"></i>
+
+<h3>AWS</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-git-alt"></i>
+
+<h3>Git</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-dharmachakra"></i>
+
+<h3>Kubernetes</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-server"></i>
+
+<h3>Terraform</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Prometheus</h3>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+<h3>Grafana</h3>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="projects" id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+
+<h3>GitLab CI/CD</h3>
+
+<p>
+
+GitLab → Docker → DockerHub →
+ArgoCD → Kubernetes Deployment
+
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>Kubernetes Monitoring</h3>
+
+<p>
+
+Prometheus + Grafana +
+Alertmanager
+
+</p>
+
+</div>
+
+
+<div class="project">
+
+<h3>AWS Infrastructure</h3>
+
+<p>
+
+EC2, ALB,
+Auto Scaling,
+CloudWatch
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email : vishnupcbmb@gmail.com</p>
+
+<p>GitHub : github.com/vishnu6381</p>
+
+<p>LinkedIn : linkedin.com/in/vishnu-s-8ba584426</p>
+
+</section>
+
+
+<footer>
+
+<p>
+
+© 2026 Vishnu S | DevOps Portfolio
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
